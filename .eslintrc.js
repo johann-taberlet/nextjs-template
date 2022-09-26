@@ -79,5 +79,6 @@ module.exports = {
     ],
     'unused-imports/no-unused-imports': 'error',
     'import/no-duplicates': 'error',
+    'spaced-comment': ['error', 'always', { markers: ['/'] }],
   },
 };
