@@ -1,7 +1,13 @@
 module.exports = {
   rootDir: process.cwd(),
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  transformIgnorePatterns: [],
+  testPathIgnorePatterns: [
+    '<rootDir>/.next/',
+    '<rootDir>/node_modules/',
+    '<rootDir>/coverage',
+    '<rootDir>/dist',
+    '<rootDir>/e2e/',
+  ],
   testEnvironment: 'jsdom',
   transform: {
     '.*\\.(tsx?|jsx?)$': [
