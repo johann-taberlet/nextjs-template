@@ -22,7 +22,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'import', 'unused-imports'],
+  plugins: ['react', '@typescript-eslint', 'import', 'unused-imports', 'no-relative-import-paths'],
   rules: {
     /* style */
     indent: ['error', 2],
@@ -80,5 +80,6 @@ module.exports = {
     'unused-imports/no-unused-imports': 'error',
     'import/no-duplicates': 'error',
     'spaced-comment': ['error', 'always', { markers: ['/'] }],
+    'no-relative-import-paths/no-relative-import-paths': ['warn', { allowSameFolder: true }],
   },
 };
