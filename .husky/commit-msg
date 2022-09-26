@@ -3,4 +3,4 @@
 # if commitlint failed, launch git cz
 #  echo red message
 
-npx --no-install commitlint --edit || (echo '\033[1;31m Your commit message is malformated, launching commitizen...\033[0m' && git-cz --retry)
+npx --no-install commitlint --edit  || (echo '\033[1;31m Your commit message is malformated, launching commitizen...\033[0m' && git cz)
