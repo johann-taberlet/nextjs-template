@@ -27,7 +27,7 @@ module.exports = {
     /* style */
     indent: ['error', 2],
     'linebreak-style': ['error', 'unix'],
-    semi: ['error', 'never'],
+    semi: ['error', 'always'],
     quotes: ['error', 'single'],
     'require-jsdoc': ['off'],
     'newline-before-return': 'error',
@@ -80,4 +80,4 @@ module.exports = {
     'unused-imports/no-unused-imports': 'error',
     'import/no-duplicates': 'error',
   },
-}
+};
