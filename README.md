@@ -6,7 +6,9 @@
 - lint : ESLint
 - format : Prettier
 - husky, lint-staged
+- Commitizen
 - EditorConfig
+- Jest React testing library
 - Playwright
 - Tailwindcss
-- Commitizen
+- Dockerfile
