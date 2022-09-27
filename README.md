@@ -8,7 +8,7 @@
 - husky, lint-staged
 - Commitizen
 - EditorConfig
-- Jest, React testing library
+- Jest React testing library
 - Playwright
 - Tailwindcss
 - Dockerfile
