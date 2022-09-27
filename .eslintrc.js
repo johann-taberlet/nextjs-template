@@ -67,13 +67,29 @@ module.exports = {
       },
     ],
     /* import */
+    'sort-imports': ['error', { ignoreCase: true, ignoreDeclarationSort: true }],
+    // this is for sorting imports
     'import/order': [
       'error',
       {
+        groups: [['external', 'builtin'], 'internal', ['sibling', 'parent'], 'index'],
+        pathGroups: [
+          {
+            pattern: '@(react|react-native) next/**',
+            group: 'external',
+            position: 'before',
+          },
+
+          {
+            pattern: '@/**',
+            group: 'internal',
+          },
+        ],
+        pathGroupsExcludedImportTypes: ['internal', 'react'],
         'newlines-between': 'always',
         alphabetize: {
-          caseInsensitive: true,
           order: 'asc',
+          caseInsensitive: true,
         },
       },
     ],
