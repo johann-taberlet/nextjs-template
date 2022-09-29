@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 
-import HelloWorld from './hello-world';
+import { HelloWorld } from './hello-world';
 
 describe('HelloWorld', () => {
-  it('should render', () => {
-    const { getByText } = render(<HelloWorld />);
-    expect(getByText(/orld/i)).toBeTruthy();
+  it('should render', async () => {
+    const { findByText } = render(<HelloWorld />);
+    expect(await findByText(/orld/i)).toBeTruthy();
   });
 });

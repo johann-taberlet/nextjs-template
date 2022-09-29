@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 
-import HelloWorld from '@/components/HelloWorld/hello-world';
+import { HelloWorld } from '@/components/HelloWorld';
 
 const Home: NextPage = () => {
   return <HelloWorld />;

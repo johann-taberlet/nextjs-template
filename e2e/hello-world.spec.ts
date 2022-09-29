@@ -1,5 +1,6 @@
-import { test, expect } from '@playwright/test';
+import { expect, test } from '@playwright/test';
+
 test('hello world', async ({ page }) => {
-  await page.goto('http://localhost:3000');
+  await page.goto('/');
   await expect(page.locator('text=/world/i')).toBeVisible();
 });
