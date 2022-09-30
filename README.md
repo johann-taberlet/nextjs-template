@@ -3,12 +3,13 @@
 # Template Project
 
 - Next.js + TypeScript
+- Tailwindcss
 - lint : ESLint
 - format : Prettier
 - husky, lint-staged
 - Commitizen
-- EditorConfig
-- Jest React testing library
+- Storybook
+- Jest, React testing library
 - Playwright
-- Tailwindcss
 - Dockerfile
+- EditorConfig
