@@ -9,5 +9,8 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "jest.jestCommandLine": "yarn test"
+  "jest.jestCommandLine": "yarn test",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

@@ -37,7 +37,7 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     /* react */
     'react/jsx-pascal-case': 'error',
-    'react/jsx-sort-props': 'error',
+    'react/jsx-sort-props': 'off',
     'react/jsx-curly-brace-presence': 'error',
     'react/react-in-jsx-scope': 'off',
     'react/self-closing-comp': [

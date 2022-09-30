@@ -1,16 +1,18 @@
+import Image from 'next/future/image';
 import type { ReactElement } from 'react';
-
-export function HelloWorld(): ReactElement {
+export interface HelloWorldProps {
+  message?: string;
+}
+export function HelloWorld({ message = 'Hello world !' }: HelloWorldProps): ReactElement {
   return (
-    <div className='underline'>
-      Hello World
-      <input
-        className='flex-1 block w-full border-gray-300 rounded-none rounded-r-md focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm'
-        id='company-website'
-        name='company-website'
-        placeholder='www.example.com'
-        type='text'
+    <>
+      <Image
+        alt='cat'
+        src='/cat.jpg'
+        width={400}
+        height={400}
       />
-    </div>
+      <h1 className='text-3xl font-bold underline'>{message}</h1>
+    </>
   );
 }

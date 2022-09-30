@@ -4,7 +4,7 @@ import { HelloWorld } from './hello-world';
 
 describe('HelloWorld', () => {
   it('should render', async () => {
-    const { findByText } = render(<HelloWorld />);
-    expect(await findByText(/orld/i)).toBeTruthy();
+    const { getByText } = render(<HelloWorld />);
+    expect(getByText(/orld/i)).toBeTruthy();
   });
 });
