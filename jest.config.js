@@ -8,6 +8,7 @@ const createJestConfig = nextJest({
 
 const customJestConfig = {
   rootDir: process.cwd(),
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   testPathIgnorePatterns: [
     '<rootDir>/.next/',
@@ -20,6 +21,8 @@ const customJestConfig = {
     'src/**/*.{js,jsx,ts,tsx}',
     '!src/utils/report-accessibility.ts',
     '!src/pages/_app.tsx',
+    '!src/**/*.stories.tsx',
+    '!src/components/**/index.ts',
   ],
   testEnvironment: 'jsdom',
   transform: {

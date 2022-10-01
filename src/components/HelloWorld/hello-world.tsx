@@ -1,5 +1,6 @@
 import Image from 'next/future/image';
 import type { ReactElement } from 'react';
+
 export interface HelloWorldProps {
   message?: string;
 }
